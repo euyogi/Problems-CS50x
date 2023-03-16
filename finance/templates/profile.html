@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Profile
+{% endblock %}
+
+{% block main %}
+    <p><strong>Current Username:</strong> {{ username }}</p>
+    <div class="mx-auto" id="change-profile">
+        <form action="/profile" method="post">
+            <div class="mb-2">
+                <label for="new-username">New Username</label>
+            </div>
+            <div class="mb-3">
+                <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="new-username" name="new-username" placeholder="e.g. user123" required type="text">
+            </div>
+            <div class="mb-3" id="invisible">
+                <input class="form-control mx-auto w-auto">
+            </div>
+            <div class="mb-2">
+                <label for="current-password">Current Password</label>
+            </div>
+            <div class="mb-3">
+                <input class="form-control mx-auto w-auto" id="current-password" name="current-password" required type="password">
+            </div>
+                <button class="btn btn-primary bottom-margin-responsive" type="submit">Change Username</button>
+        </form>
+        <form action="/profile" method="post">
+            <div class="mb-2">
+                <label for="new-password">New Password</label>
+            </div>
+            <div class="mb-3">
+                <input class="form-control mx-auto w-auto" id="new-password" name="new-password" minlength="8" placeholder="Atleast 8 characters" required type="password">
+            </div>
+            <div class="mb-3">
+                <input class="form-control mx-auto w-auto" name="confirmation" minlength="8" placeholder="Confirm Password" required type="password">
+            </div>
+            <div class="mb-2">
+                <label for="current-password">Current Password</label>
+            </div>
+            <div class="mb-3">
+                <input class="form-control mx-auto w-auto" id="current-password" name="current-password" required type="password">
+            </div>
+            <button class="btn btn-primary" type="submit">Change Password</button>
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    <table>
+        <thead>
+            <tr>
+                <th class="left">Stock Symbol</th>
+                <th class="left">Name</th>
+                <th class="right">Shares (UN)</th>
+                <th class="right">Current Price (USD)</th>
+                <th class="right">Total (USD)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for stock in stocks %}
+                <tr>
+                    <td class="left">{{ stock["symbol"] }}</td>
+                    <td class="left">{{ lookup(stock["symbol"])["name"] }}</td>
+                    <td class="right">{{ stock["shares"] }}</td>
+                    <td class="right">{{ lookup(stock["symbol"])["price"] | usd }}</td>
+                    <td class="right">{{ (stock["shares"] * lookup(stock["symbol"])["price"]) | usd }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td><td></td><td></td>
+                <th class="right">Cash (USD)</td>
+                <td class="right">{{ user_cash | usd }}</td>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td>
+                <th class="right">Total (USD)</td>
+                <td class="right">{{ (user_cash + stocks_total_price) | usd }}</td>
+            </tr>
+        </tfoot>
+    </table>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <table>
+        <thead>
+            <tr>
+                <th class="left">Transaction Type</th>
+                <th class="left">Stock Symbol</th>
+                <th class="right">Shares (UN)</th>
+                <th class="right">Purchase/Sale Price (USD)</th>
+                <th class="right">Total (USD)</th>
+                <th class="right">Date (UTC)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for transaction in transactions %}
+                <tr>
+                    <td class="left">{{ transaction["type"] }}</td>
+                    <td class="left">{{ transaction["symbol"] }}</td>
+                    <td class="right">{{ transaction["shares"] }}</td>
+                    <td class="right">{{ transaction["price"] | usd }}</td>
+                    <td class="right">{{ (transaction["shares"] * transaction["price"]) | usd }}</td>
+                    <td class="right">{{ transaction["date"] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

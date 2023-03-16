@@ -1,0 +1,69 @@
+.left {text-align: left; padding: 0 2%;}
+
+.right {text-align: right; padding: 0 2%;}
+
+.bottom-margin-responsive {margin-bottom: 0;}
+
+#change-profile {
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+}
+
+#invisible {visibility: hidden;}
+
+/* SETTINGS FOR MOBILE */
+@media screen and (max-width: 800px) {
+    #change-profile {display: block;}
+
+    #invisible {position: absolute;}
+
+    .bottom-margin-responsive {margin-bottom: 10%;}
+
+    .left, .right {text-align: center; padding: 0;}
+
+    table {
+        margin: 0;
+        width: 100%;
+    }
+
+    tr {line-height: 100%}
+}
+
+/* Size for brand */
+nav .navbar-brand
+{
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+nav .navbar-brand .red
+{
+    color: #ea433b;
+}
+nav .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+
+/* Style for inputs */
+input[name="symbol"] {text-transform: uppercase}
+
+/* Style for portfolios table */
+table {
+    margin: 0 auto;
+    width: 85%;
+}
+
+tr {line-height: 200%;}
+
+/* Even table rows background color */
+tr:nth-child(even) {background-color: #f8f9fa;}
