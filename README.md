@@ -110,22 +110,22 @@
 
     * <h3>Lab 8:</h3>
 
-        * <a href="trivia">Trivia</a>
+        * <a href="https://github.com/euyogi/Projeto-Trivia/">Trivia</a>
 
     * <h3>Problem Set 8:</h3>
 
-        * <a href="homepage">Homepage</a>
+        * <a href="https://github.com/euyogi/Projeto-Homepage/">Homepage</a>
 
 
 * <h2>Week 9: Flask</h2>
 
     * <h3>Lab 9:</h3>
 
-        * <a href="birthdays">Birthdays</a>
+        * <a href="https://github.com/euyogi/Projeto-Birthdays/">Birthdays</a>
 
     * <h3>Problem Set 9:</h3>
 
-        * <a href="finance">Finance</a>
+        * <a href="https://github.com/euyogi/Projeto-Finance/">Finance</a>
         
 <p align="center">
   Problemas/Labs feito por: Yogi Nam de Souza Barbosa
