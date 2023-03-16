@@ -1,4 +1,4 @@
-# CS50x-2022/2023
+# Problems-CS50x
 
 * <h2>Week 0: Scratch</h3>
 
