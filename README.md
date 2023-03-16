@@ -4,8 +4,8 @@
 
     * <h3>Problem Set 0:</h3>
 
-        * <a href=""></a>
-    
+        * <a href="https://scratch.mit.edu/projects/779404799">Scratch Project</a>
+
 * <h2>Week 1: C</h2>
 
     * <h3>Lab 1:</h3>
