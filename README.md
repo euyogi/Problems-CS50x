@@ -110,7 +110,7 @@
 
     * <h3>Lab 8:</h3>
 
-        * <a href="https://github.com/euyogi/Projeto-Trivia/">Trivia</a>
+        * <a href="https://github.com/euyogi/Prototipo-Trivia/">Trivia</a>
 
     * <h3>Problem Set 8:</h3>
 
@@ -121,7 +121,7 @@
 
     * <h3>Lab 9:</h3>
 
-        * <a href="https://github.com/euyogi/Projeto-Birthdays/">Birthdays</a>
+        * <a href="https://github.com/euyogi/Prototipo-Birthdays/">Birthdays</a>
 
     * <h3>Problem Set 9:</h3>
 
