@@ -1,5 +1,7 @@
 # Problems-CS50x
 
+<img alt="Header" width=100% src="https://capsule-render.vercel.app/api?type=waving&color=b03955&height=100&section=header">
+
 * <h2>Week 0: Scratch</h3>
 
     * <h3>Problem Set 0:</h3>
@@ -131,6 +133,4 @@
   Problemas/Labs feito por: Yogi Nam de Souza Barbosa
 </p>
 
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/46427886/218377101-f832c1a3-6c48-4016-92d2-0d8b6a4fafd5.gif" width="10%" alt-text="Minha imagem de perfil (umcachorro)" />
-</div>
+<img alt="Footer" width=100% src="https://capsule-render.vercel.app/api?type=waving&color=b03955&height=100&section=footer">
